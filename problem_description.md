@@ -14,10 +14,9 @@ a jeste jak vidis v kodu je ta poznamka k metode generate() takto: // generuje o
 
 Muj postreh jak to chapu:
 
-Myslim ze to sluvko "okamzite" je trochu zavadejici... Myslím si že to "okamžitě" závisí právě na té metodě finalize() která se ve svůj čas spustí a objekt smaže.
-Tak jestli tak to okamžitě má být myšleno tak je to dle mě teda velmi rychlé :-)
-Ja to chapu tak: že v metodě main je vytvořen objekt ob typu UkazFin, kde pak v tom cyklu voláš metodou generate() vytvoření objektů s referencí "o" a ty objekty
-v té paměti prostě jsou ne? teda drtivá většina z nich tam zkrátka nějakou tu dobu je (dle velikosti RAM samozřejmě) a pak se až smažou metodou finalize().
+Myslím že to slůvko "okamžite" je trochu zavádějící... Myslím si, že to "okamžitě" závisí právě na té další metodě finalize() která se ve svůj čas spustí a objekt smaže.
+Tak jestli tak to okamžitě má být myšleno takto jak je to napsáno, tak je to dle mě teda velmi krátké trvání objektu....
+Chápu tak: že v metodě main je vytvořen objekt ob typu UkazFin, kde pak v tom cyklu voláš metodou generate() vytvoření stejných objektů ale jen s jinou referencí "o" a ty objekty tam v té paměti prostě jsou nějakou tu dobu ne? teda drtivá většina z nich tam zkrátka nějakou tu dobu je (dle velikosti RAM samozřejmě) a až pak se smažou díky metodě  finalize().
 
 Ale pokud to je přece ještě jinak cele a chtěl bys to nějak okomentovat, budu velmi rád. Můžeš to prosím pak napsat tady dolů pod čaru třeba:
 
