@@ -18,8 +18,4 @@ Myslím že to slůvko "okamžite" je trochu zavádějící... Myslím si, že t
 Tak jestli tak to okamžitě má být myšleno takto jak je to napsáno, tak je to dle mě teda velmi krátké trvání objektu....
 Chápu tak: že v metodě main je vytvořen objekt ob typu UkazFin, kde pak v tom cyklu voláš metodou generate() vytvoření stejných objektů ale jen s jinou referencí "o" a ty objekty tam v té paměti prostě jsou nějakou tu dobu ne? teda drtivá většina z nich tam zkrátka nějakou tu dobu je (dle velikosti RAM samozřejmě) a až pak se smažou díky metodě  finalize().
 
-Ale pokud to je přece ještě jinak cele a chtěl bys to nějak okomentovat, budu velmi rád. Můžeš to prosím pak napsat tady dolů pod čaru třeba:
-
--------------------------------------------
-
 
